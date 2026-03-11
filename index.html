@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Intent Shortcuts | Quick Settings</title>
+    <meta name="description" content="Quick access to 50+ hidden Android settings via intent shortcuts. Bypass menus and go directly to Developer Options, Network Settings, and more.">
+    
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <header class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="ri-android-line"></i>
+                <span>Intent<span class="highlight">Shortcuts</span></span>
+            </div>
+            <div class="controls">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="badge">Explore Android</span>
+            <h1>Direct Access to <br>Hidden <span class="text-gradient">Settings</span></h1>
+            <p>50+ powerful intent shortcuts designed to instantly navigate you directly to deep Android OS menus. Tap any card below on your Android device.</p>
+            
+            <div class="search-bar glass-panel">
+                <i class="ri-search-line"></i>
+                <input type="text" id="search-input" placeholder="Search for Wi-Fi, Storage, Developer...">
+            </div>
+        </section>
+
+        <!-- Categories & Shortcuts Grid will be generated via JS -->
+        <div id="shortcuts-container" class="shortcuts-container">
+            <!-- Content injected here -->
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created for exploring Android capabilities. Not affiliated with Google.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
