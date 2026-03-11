@@ -6,11 +6,12 @@
 
 const intentData = [
     {
-        category: "System Access (12 items)",
+        category: "System Access (13 items)",
         icon: "ri-settings-3-line",
         items: [
             { title: "Settings App", desc: "Main device settings", uri: "intent://com.android.settings/#Intent;scheme=android-app;end", icon: "ri-settings-4-line" },
             { title: "Google Play Services", desc: "Open to Disable (Crucial Bypass Step)", uri: "intent://com.google.android.gms/#Intent;scheme=android-app;end", icon: "ri-google-fill" },
+            { title: "Play Services App Info", desc: "Direct to Settings App Info", uri: "intent:package:com.google.android.gms#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;end", icon: "ri-information-line" },
             { title: "Screen Smart Lock Menu", desc: "Setup screen lock (PIN/Password)", uri: "intent://com.google.android.gms/#Intent;scheme=promote_smartlock_scheme;end", icon: "ri-lock-line" },
             { title: "ADB Settings", desc: "Samsung USB Debugging", uri: "intent://com.sec.android.app.modemui.activities.USB.settings/#Intent;scheme=android-app;end", icon: "ri-bug-line" },
             { title: "Samsung Hidden Menu", desc: "Factory Keystring", uri: "intent://com.sec.android.app.hwmoduletest/#Intent;scheme=android-app;end", icon: "ri-terminal-window-line" },
