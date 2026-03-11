@@ -6,13 +6,15 @@
 
 const intentData = [
     {
-        category: "System Access (10 items)",
+        category: "System Access (12 items)",
         icon: "ri-settings-3-line",
         items: [
             { title: "Settings App", desc: "Main device settings", uri: "intent://com.android.settings/#Intent;scheme=android-app;end", icon: "ri-settings-4-line" },
+            { title: "Google Play Services", desc: "Open to Disable (Crucial Bypass Step)", uri: "intent://com.google.android.gms/#Intent;scheme=android-app;end", icon: "ri-google-fill" },
             { title: "Screen Smart Lock Menu", desc: "Setup screen lock (PIN/Password)", uri: "intent://com.google.android.gms/#Intent;scheme=promote_smartlock_scheme;end", icon: "ri-lock-line" },
             { title: "ADB Settings", desc: "Samsung USB Debugging", uri: "intent://com.sec.android.app.modemui.activities.USB.settings/#Intent;scheme=android-app;end", icon: "ri-bug-line" },
             { title: "Samsung Hidden Menu", desc: "Factory Keystring", uri: "intent://com.sec.android.app.hwmoduletest/#Intent;scheme=android-app;end", icon: "ri-terminal-window-line" },
+            { title: "Choose Screen Lock (A03s)", desc: "Direct to Lock Setup", uri: "intent://com.android.settings.password.ChooseLockGeneric/#Intent;scheme=android-app;end", icon: "ri-key-2-line" },
             { title: "Developer Options", desc: "Advanced Settings", uri: "intent://com.android.settings.DevelopmentSettings/#Intent;scheme=android-app;end", icon: "ri-code-line" },
             { title: "Wi-Fi Settings Direct", desc: "Wi-Fi networks", uri: "intent://com.android.settings.wifi.WifiSettings/#Intent;scheme=android-app;end", icon: "ri-wifi-line" },
             { title: "Bluetooth Settings Direct", desc: "Bluetooth pairings", uri: "intent://com.android.settings.bluetooth.BluetoothSettings/#Intent;scheme=android-app;end", icon: "ri-bluetooth-line" },
