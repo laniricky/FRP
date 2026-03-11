@@ -157,12 +157,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Determine the correct href
                 // If it's a specific URI provided, use it.
-                // Otherwise format it as a standard android.settings action
+                // Otherwise format it using the android-app scheme for Settings
                 let href = '';
                 if(item.uri) {
                      href = item.uri;
                 } else if (item.intent) {
-                     href = `intent:#Intent;action=android.settings.${item.intent};end`;
+                     // Remove 'ACTION_' prefix to get actual string (e.g. ACTION_WIFI_SETTINGS -> WIFI_SETTINGS)
+                     const actionStr = item.intent.replace(/^ACTION_/, '');
+                     href = `intent://com.android.settings/#Intent;scheme=android-app;action=android.settings.${actionStr};end`;
                 }
 
                 card.href = href;
