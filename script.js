@@ -22,10 +22,12 @@ const intentData = [
         ]
     },
     {
-        category: "Samsung Specific (12 items)",
+        category: "Samsung Specific (14 items)",
         icon: "ri-smartphone-line",
         items: [
             { title: "Galaxy Store", desc: "Samsung Store bypass target", uri: "intent://com.sec.android.app.samsungapps/#Intent;scheme=android-app;end", icon: "ri-store-2-line" },
+            { title: "Install Alliance Shield X", desc: "Open directly in Galaxy Store", uri: "intent://ProductDetail/com.rrivenllc.shieldx/#Intent;scheme=samsungapps;action=android.intent.action.VIEW;end", icon: "ri-download-cloud-2-line" },
+            { title: "Install Package Disabler", desc: "Open directly in Galaxy Store", uri: "intent://ProductDetail/com.ospolice.packagedisablerpro/#Intent;scheme=samsungapps;action=android.intent.action.VIEW;end", icon: "ri-download-cloud-2-line" },
             { title: "My Files / File Manager", desc: "Samsung files bypass target", uri: "intent://com.sec.android.app.myfiles/#Intent;scheme=android-app;end", icon: "ri-folder-open-line" },
             { title: "Calculator (Exploit)", desc: "Samsung Calculator", uri: "intent://com.sec.android.app.popupcalculator/#Intent;scheme=android-app;end", icon: "ri-calculator-line" },
             { title: "Phone Dialer", desc: "Open the dial pad to run codes", uri: "tel:1234567890/#Intent;scheme=android-app;end", icon: "ri-phone-line" },
