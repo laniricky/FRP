@@ -62,9 +62,10 @@ const intentData = [
         ]
     },
     {
-        category: "Exploits & Targets (10 items)",
+        category: "Exploits & Targets (11 items)",
          icon: "ri-door-open-line",
          items: [
+             { title: "Smart Manager PromoPro", desc: "Launch installed Smart Manager app", uri: "intent://com.smart.manager.application.promopro/#Intent;scheme=android-app;end", icon: "ri-dashboard-3-line" },
              { title: "Alliance Shield X", desc: "Launch Alliance Shield", uri: "intent://com.allianceshield.x/#Intent;scheme=android-app;end", icon: "ri-shield-flash-line" },
              { title: "Activity Manager", desc: "Launch Activity Manager", uri: "intent://com.activitymanager/#Intent;scheme=android-app;end", icon: "ri-list-settings-line" },
              { title: "QuickShortcutMaker", desc: "Launch QuickShortcutMaker", uri: "intent://com.sika524.android.quickshortcut/#Intent;scheme=android-app;end", icon: "ri-shortcut-line" },
